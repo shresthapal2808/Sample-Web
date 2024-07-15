@@ -4,7 +4,9 @@ Welcome to my professional portfolio website, highlighting my skills in web deve
 
 ## Features
 **Home Page**: Enter your first and last name to receive a dynamically generated joke fetched via an API.
+
 **Portfolio Page**: Discover selected projects showcasing my skills and achievements, along with brief information about myself.
+
 **Contact Page**: Experiment with Django's admin interface to manage the website's database effortlessly.
 
 ## Preview
