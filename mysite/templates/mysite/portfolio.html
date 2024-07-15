@@ -1,0 +1,66 @@
+{% extends 'mysite/base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    .card-link {
+        text-decoration: none; /* Remove underline */
+        color: inherit; /* Inherit the default text color */
+    }
+</style>
+
+
+
+<div class="container" style="margin-top: 100px; text-align: center;">
+    <h1><u>Welcome to my Portfolio</u></h1>
+    <h2 style="margin-top: 25px;"><b>About Myself</b></h2>
+    <p class="lead">I am passionate about leveraging technology to create meaningful solutions and enhance user experiences.
+        As a student of Computer Science and Engineering at Techno India University, I'm dedicated to expanding my programming
+        skills and exploring new technologies. My journey includes hands-on experience in developing web applications using
+        HTML, CSS, JavaScript, and Bootstrap. I thrive on the challenges of programming, where each project fuels my curiosity and
+        drive to innovate. Eager to apply my knowledge in dynamic environments, I'm committed to continuous learning and
+        contributing to impactful technological advancements.</p>
+
+    <div style="margin-top: 50px;"></div> <!-- Space between sections -->
+
+    <h2>Here are some of my projects: 🌟</h2>
+    <div class="row mt-4">
+        <div class="col">
+            <a href="https://github.com/shresthapal2808/Predicting_House_Price" target="_blank" class="card-link">
+                <div class="card">
+                    <img src="{% static 'mysite/images/HP.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">House Price Prediction Model</h5>
+                        <p class="card-text">Linear Regression Model to predict house price based on different parameters</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="https://github.com/shresthapal2808/Bank-Customer-Churn-Prediction" target="_blank" class="card-link">
+                <div class="card">
+                    <img src="{% static 'mysite/images/BP.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bank Customer Churn Prediction Model</h5>
+                        <p class="card-text">Used Logistic Regression and Decision Tree to make predictions whether the average balance of the customer
+                            will fall below the minimum balance in the consecutive month or not</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="https://github.com/shresthapal2808/demographic_clustering" target="_blank" class="card-link">
+                <div class="card">
+                    <img src="{% static 'mysite/images/PP.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Demographic Clustering</h5>
+                        <p class="card-text">Used K-Nearest Neighbors (KNN) algorithm to to segregate the regions into different groups
+                            so that the marketing team can plan the promotional campaign accordingly</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
